@@ -91,7 +91,7 @@ WSGI_APPLICATION = 'mycyberspace.wsgi.application'
 #             'ENGINE': 'django.db.backends.postgresql_psycopg2',
 #             'NAME': 'my_web',
 #             'USER': 'postgres',
-#             'PASSWORD': '0@Aman.com',
+#             'PASSWORD': '-',
 #             'HOST': 'localhost',
 #             'PORT': '5432',
 #         }
