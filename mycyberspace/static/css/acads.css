@@ -1,39 +1,67 @@
+ {% load static %}
  body {
       font: 20px Montserrat, sans-serif;
       line-height: 1.8;
       color: #f5f6f7;
+     // cursor: url('/static/media/download.png'), default;
+
+}
   }
   p {font-size: 16px;}
   .margin {margin-bottom: 45px;}
   .bg-1 {
-      background-color: #1abc9c; /* Green */
-      color: #ffffff;
+    background-image:url('/static/media/night_sky.jpg');
+   // background-size:cover;
+    height:100%;
+
   }
-  .bg-2 {
-      background-color: #474e5d; /* Dark Blue */
-      color: #ffffff;
-  }
-  .bg-3 {
-      background-color: #ffffff; /* White */
-      color: #555555;
-  }
-  .bg-4 {
-      background-color: #2f2f2f; /* Black Gray */
-      color: #fff;
-  }
+
+
   .container-fluid {
-      padding-top: 70px;
-      padding-bottom: 70px;
+      padding-top: 50px;
+      padding-bottom:50px;
   }
-  .navbar {
-      padding-top: 15px;
-      padding-bottom: 15px;
-      border: 0;
-      border-radius: 0;
-      margin-bottom: 0;
-      font-size: 12px;
-      letter-spacing: 5px;
+
+
+  .custom-con {
+  border-style:solid;
+  border-color:#ffffff80;
+  height:100%;
+  border-width:thin;
   }
-  .navbar-nav  li a:hover {
-      color: #1abc9c !important;
+
+  .special-hr
+  {
+    width:50%;
+
   }
+.ic {
+font-size:160%;
+ background-color: transparent;
+  border-color: #ccc;
+  color:#fff;
+
+}
+  .custom-btn{
+    background-color: transparent;
+  border-color: #ccc;
+  }
+
+  .custom-btn:hover {
+  color:black;
+  background:#ffffff40;
+  }
+  .content {
+  margin-top : 60px;
+  }
+
+  .footer-content-1 {
+    position: absolute;
+    /* position: absolute; */
+    /* bottom: 100px; */
+    align-content: center;
+    bottom: 70;
+     margin: 0 auto;
+}
+
+

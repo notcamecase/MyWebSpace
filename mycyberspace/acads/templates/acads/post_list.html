@@ -3,73 +3,112 @@
     <title>Aman</title>
      <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
     <link rel="stylesheet" href="{% static 'css/acads.css' %}">
+
 
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar navbar-default">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Me</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="{% url 'acads:post' %}">MY CYBER SPACE</a></li>
-
-      </ul>
-    </div>
-  </div>
-</nav>
 
 <!-- First Container -->
-<div class="container-fluid bg-1 text-center">
-  <h3 class="margin">Who Am I?</h3>
-  <img src="{% static 'media/bird1.jpg' %}" class="img-responsive img-circle margin" style="display:inline" alt="Bird" width="350" height="350">
-  <h3>I'm a normal boy</h3>
-</div>
+<div class="container-fluid text-center bg-1 main-sec" id="try">
+  <div class="container custom-con" style="padding:20px">
+  <h3 class="margin" id="d">Aman Gautam</h3>
+  <h3 id="b">Web Developer | Mechanical Engineer</h3>
+    <hr class="special-hr" id="photo"><div class="content">
+      <a id="c" href="{% url 'acads:post' %}" style="color:#fff"><button  type="button" class="btn custom-btn">Welcome to My Cyber Space</button></a>
+     <!--<hr class="special-hr">-->
+    <!--<i class="fab fa-twitter-square"></i>-->
 
-<!-- Second Container -->
-<div class="container-fluid bg-2 text-center">
-  <h3 class="margin">What Am I?</h3>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-  <a href="{% url 'acads:post' %}" class="btn btn-default btn-lg">
-   MyCyberspace
-  </a>
-</div>
-
-<!-- Third Container (Grid) -->
-<div class="container-fluid bg-3 text-center">
-  <h3 class="margin">Where To Find Me?</h3><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="{% static 'media/birds2.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="{% static 'media/birds3.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
-    <div class="col-sm-4">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      <img src="{% static 'media/birds4.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
-    </div>
   </div>
+
+  <div class="footer-content-1 text-center" id="foot">
+    <a href="https://twitter.com/AmanGau23213887"><i class="fab fa-twitter-square ic" ></i></a>
+    <a href="github.com/amangautam015"><i class="fab fa-github-square ic"></i></a>
+    <a href="https://www.facebook.com/aman.gautam.7587370"><i class="fab fa-facebook ic"></i></a>
+    <a href="https://www.instagram.com/aman_1501/"><i class="fab fa-instagram ic"></i></a>
+     <a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=13annon@gmail.com" target="_blank"><i class="fas fa-envelope-square ic"></i></a>
+
+
+<hr class="special-hr-footer">
+  </div>
+
+
+    </div>
 </div>
 
-<!-- Footer -->
-<footer class="container-fluid bg-4 text-center">
-  <p>Made By <a href="https://github.com/amangautam015">meimyself</a></p>
-</footer>
+<!--&lt;!&ndash; Second Container &ndash;&gt;-->
+<!--<div class="container-fluid bg-2 text-center">-->
+  <!--<h3 class="margin">What Am I?</h3>-->
+  <!--<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>-->
+  <!--<a href="{% url 'acads:post' %}" class="btn btn-default btn-lg">-->
+   <!--MyCyberspace-->
+  <!--</a>-->
+<!--</div>-->
 
+<!--&lt;!&ndash; Third Container (Grid) &ndash;&gt;-->
+<!--<div class="container-fluid bg-3 text-center">-->
+  <!--<h3 class="margin">Where To Find Me?</h3><br>-->
+  <!--<div class="row">-->
+    <!--<div class="col-sm-4">-->
+      <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>-->
+      <!--<img src="{% static 'media/birds2.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">-->
+    <!--</div>-->
+    <!--<div class="col-sm-4">-->
+      <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>-->
+      <!--<img src="{% static 'media/birds3.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">-->
+    <!--</div>-->
+    <!--<div class="col-sm-4">-->
+      <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>-->
+      <!--<img src="{% static 'media/birds4.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">-->
+    <!--</div>-->
+  <!--</div>-->
+<!--</div>-->
+
+<!--&lt;!&ndash; Footer &ndash;&gt;-->
+<!--<footer class="container-fluid bg-4 text-center">-->
+  <!--<p>Made By <a href="https://github.com/amangautam015">meimyself</a></p>-->
+<!--</footer>-->
+
+<script >
+i=0;
+var photo = document.getElementById("photo");
+var b = document.getElementById("b");
+var d = document.getElementById("d");
+var c = document.getElementById("c");
+var foot = document.getElementById("foot");
+
+TweenMax.from(photo, 4, {width:"0px"});
+TweenMax.from(b, 4, {opacity:"0"});
+TweenMax.from(c, 4, {opacity:"0"});
+TweenMax.from(d, 4, {opacity:"0"});
+TweenMax.from(foot,1,{opacity:"0",right:"0",delay:2});
+
+$(document).ready(function(){
+    console.log("dfs");
+    setTimeout(function() {
+    $('#foot').css({
+    right: ''
+});
+   $('.bg-1').mousemove(function(e){
+      var mousePosY = (e.pageY/$(window).height())*100;
+      var mousePosX = (e.pageX/$(window).width())*100;
+      $('.bg-1').css('background-position-x', mousePosX/20 +'%');
+      var mousePosY = (e.pageY/$(window).height())*100;
+      $('.bg-1').css('background-position-y', mousePosY/20 +'%');
+
+   });
+   },4100);
+});
+
+
+</script>
 </body>
